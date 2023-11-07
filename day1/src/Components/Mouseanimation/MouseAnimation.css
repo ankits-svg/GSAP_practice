@@ -1,0 +1,44 @@
+/* mouse-animation.css */
+
+.circle {
+    position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+  }
+  
+  .circle.sm {
+    width: 10px;
+  height: 10px;
+  }
+  
+  .circle.md {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .circle.lg {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Optional: Add animations or styles for different sizes or effects */
+  
+  /* Animate the circles when they are first created */
+  .circle.enter {
+    animation: enter 0.5s ease;
+  }
+  
+  @keyframes enter {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
